@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7b5f9d112b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/new.css" />
+    <title>navbar</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="home.html"
+          ><i class="fa-sharp fa-solid fa-shop"></i>online shop</a
+        >
+      </div>
+      <div class="mobile_responsive_element">
+        <span
+          ><i
+            class="fa-solid fa-magnifying-glass"
+            id="search_btn"
+            onclick="search_componenet()"
+          ></i
+        ></span>
+        <span><i class="fa-solid fa-cart-shopping" id="cart_btn"></i></span>
+        <span
+          ><i class="fa-solid fa-bars" id="menu_btn" onclick="show()"></i
+        ></span>
+        <span
+          ><i class="fa-solid fa-xmark" id="close_btn" onclick="hide()"></i
+        ></span>
+      </div>
+      <div class="nav_right_side_element">
+        <form action="#" method="post" class="search-form" id="try">
+          <input type="search" id="search-box" placeholder="search here..." />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="nav_list">
+          <a href="home.html" id=""> home </a>
+          <a href="about.html"> about </a>
+          <a href="products.html"> products </a>
+          <a href="users_area/user_profile.html"
+            ><i class="fa-solid fa-user"></i>Accounts</a
+          >
+          <a href="users_area/user_login.html" class="fas fa-heart"></a>
+          <a href="cart.html" class="fas fa-shopping-cart"></a>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
+<script>
+  let a = document.querySelector("#menu_btn");
+  let b = document.querySelector("#close_btn");
+  let c = document.querySelector(".nav_list");
+  let d = document.querySelector(".search-form");
+  function show() {
+    a.style.display = "none";
+    b.style.display = "inline-block";
+    c.style.display = "flex";
+  }
+  function hide() {
+    b.style.display = "none";
+    a.style.display = "inline-block";
+    c.style.display = "none";
+  }
+  function search_componenet() {
+    d.style.display = "flex";
+  }
+</script>

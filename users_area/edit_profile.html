@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7b5f9d112b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiper css link  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="css/users_profile.css" />
+    <title>Ecommerce</title>
+    <style>
+        h1 {
+            font-size: 2.5rem;
+            padding:0.5rem 0;
+        }
+    
+        form div {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+        }
+    
+        form div input,.class_input{
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
+            border: 1px solid black;
+            border-radius: 0.5rem;
+        }
+    
+        .edit_section_image_set {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 2px solid black; */
+            width: 100%;
+            align-items: center;
+        }
+    
+        .edit_image {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- header sectio start -->
+    <header class="header">
+      <a href="home.html" class="logo"
+        ><i class="fa-sharp fa-solid fa-shop">
+          <p class="logo_name">online shop</p></i
+        ></a
+      >
+      <form action="#" method="post" class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+      <div class="nav_element">
+        <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="../home.html" id=""> home </a>
+        <a href="about.html"> about </a>
+        <a href="products.html"> products </a>
+        <a href="login.html" class="fas fa-user"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+      </div>
+    </header>
+    <!-- header section ends -->
+    <div class="user_profile">
+      <div class="left_child">
+        <h1>your Profile</h1>
+        <div class="users_bio">
+          <div class="user_image">
+            <img src="profile_images/image (1).jpg" alt="profile_images" />
+          </div>
+          <h1>suhail khan</h1>
+        </div>
+        <div class="profile_element_list">
+          <a href="user_profile.html"> pending orders</a>
+          <a href="edit_profile.html"> Edit Account</a>
+          <a href="my_order.html"> My Orders</a>
+          <a href="delete_account.html"> Delete Account</a>
+          <a href="#"> Logout</a>
+        </div>
+      </div>
+      <div class="right_child">
+        <h1>edit account</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div>
+                <input type="text" value="Suhail khan" name="user_name" >
+                <input type="email" name="user_email" value="suhailkhan@gmail.com" >
+                <div class="edit_section_image_set">
+                    <input type="file" name="user_image" id="" class="class_input">
+                    <img src="profile_images/image (1).jpg" alt="" class="edit_image">
+                </div>
+                <input type="text" name="user_mobile" value="9068254023"id="">
+                <input type="text" name="user_address" id="" value="Patwari nagla aligarh" >
+                <input type="submit" value="update" name="update_data">
+            </div>
+        </form>
+        </div>
+    </div>
+    <!-- footer section starts  -->
+
+    <section class="quick-links">
+      <a href="home.html" class="logo"> <i class="fas fa-store"></i> shopie </a>
+
+      <div class="links">
+        <a href="#home">home </a>
+        <a href="about.html">about </a>
+        <a href="products.html">products </a>
+        <a href="contact.html"> contact </a>
+        <a href="login.html"> login </a>
+        <a href="register.html"> register </a>
+        <a href="cart.html"> cart </a>
+      </div>
+
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </section>
+
+    <section class="copyright">
+      <p>
+        All rights reserved by
+        <span><i class="fa-solid fa-heart"></i></span> Sameer khan
+      </p>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- swiper js link      -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

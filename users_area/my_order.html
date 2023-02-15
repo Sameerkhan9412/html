@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7b5f9d112b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiper css link  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="css/users_profile.css" />
+    <title>Ecommerce</title>
+    <style>
+      h1 {
+        font-size: 2.5rem;
+      }
+      table{
+        margin:2rem;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      table th{
+        background-color: aqua;
+      }
+      table tr{
+        background-color: white;
+      }
+#link_confirm{
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header sectio start -->
+    <header class="header">
+      <a href="home.html" class="logo"
+        ><i class="fa-sharp fa-solid fa-shop">
+          <p class="logo_name">online shop</p></i
+        ></a
+      >
+      <form action="#" method="post" class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+      <div class="nav_element">
+        <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="../home.html" id=""> home </a>
+        <a href="about.html"> about </a>
+        <a href="products.html"> products </a>
+        <a href="login.html" class="fas fa-user"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+      </div>
+    </header>
+    <!-- header section ends -->
+    <div class="user_profile">
+      <div class="left_child">
+        <h1>your Profile</h1>
+        <div class="users_bio">
+          <div class="user_image">
+            <img src="profile_images/image (1).jpg" alt="profile_images" />
+          </div>
+          <h1>suhail khan</h1>
+        </div>
+        <div class="profile_element_list">
+          <a href="user_profile.html"> pending orders</a>
+          <a href="edit_profile.html"> Edit Account</a>
+          <a href="my_order.html"> My Orders</a>
+          <a href="delete_account.html"> Delete Account</a>
+          <a href="#"> Logout</a>
+        </div>
+      </div>
+      <div class="right_child">
+        <h1>All my orders</h1>
+        <table>
+          <tr>
+            <th>Sl no.</th>
+            <!-- <th>user_id</th> -->
+            <th>amount due</th>
+            <th>Total products</th>
+            <th>Invoice number</th>
+            <th>Date</th>
+            <th>Complete/Incomplete</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>$number</td>
+            <td>$amount_due</td>
+            <td>$total_products</td>
+            <td>$invoice_number</td>
+            <td>$order_date</td>
+            <td>$order_status</td>
+            <td>
+              <a href="confirm_payment.php?order_id=$order_id" id="link_confirm">confirm</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- footer section starts  -->
+
+    <section class="quick-links">
+      <a href="home.html" class="logo"> <i class="fas fa-store"></i> shopie </a>
+
+      <div class="links">
+        <a href="#home">home </a>
+        <a href="about.html">about </a>
+        <a href="products.html">products </a>
+        <a href="contact.html"> contact </a>
+        <a href="login.html"> login </a>
+        <a href="register.html"> register </a>
+        <a href="cart.html"> cart </a>
+      </div>
+
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </section>
+
+    <section class="copyright">
+      <p>
+        All rights reserved by
+        <span><i class="fa-solid fa-heart"></i></span> Sameer khan
+      </p>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- swiper js link      -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

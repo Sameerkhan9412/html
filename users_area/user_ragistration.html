@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7b5f9d112b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiper css link  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/home.css" />
+    <title>Ecommerce</title>
+    <style>
+      /* css for ragistratin form */
+      .ragistration_container {
+        height: 90vh;
+        width: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        width: 60%;
+        max-width: 70rem;
+        border: 2px solid black;
+        font-size: 1.5rem;
+        padding: 0 2rem;
+        background-color: white;
+        border-radius: 1rem;
+      }
+      form h1 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0.5rem;
+        text-decoration: underline;
+      }
+      .input-box {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+      }
+      .input-box input {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border:0.2rem solid black;
+        border-radius: 0.5rem;
+      }
+      .user-details {
+        display: flex;
+        flex-direction: column;
+      }
+      .user-details div {
+        display: flex;
+        width: 100%;
+      }
+      .radio_section {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        padding:1rem;
+      }
+      .radio_opti div {
+        display: flex;
+      }
+      .button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding:1rem;
+        /* font-size: 2rem; */
+      }
+      .button input{
+        font-size: 1.8rem;
+        background-color: #333;
+        color: white;
+        font-weight: 700;
+        padding:1rem 0;
+        transition: all linear 0.5s;
+      }
+      .button input:hover{
+        background-color: white;
+        color:black;
+      }
+      .login_link{
+        text-align: center;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header sectio start -->
+     <!-- header sectio start -->
+     <header class="header">
+      <div class="logo"><a href="home.html"><i class="fa-sharp fa-solid fa-shop"></i>online shop</a></div>
+      <div class="mobile_responsive_element">
+        <span><i class="fa-solid fa-magnifying-glass" id="search_btn" onclick="search_componenet()"></i></span>
+        <span><i class="fa-solid fa-cart-shopping" id="cart_btn"></i></span>
+        <span><i class="fa-solid fa-bars" id="menu_btn" onclick="show()" ></i></span>
+        <span><i class="fa-solid fa-xmark" id="close_btn" onclick="hide()"></i></span>
+      </div>
+      <div class="nav_right_side_element">
+        <form action="#" method="post" class="search-form" id="try">
+          <input type="search" id="search-box" placeholder="search here..." />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="nav_list">
+          <a href="home.html" id=""> home </a>
+          <a href="about.html"> about </a>
+          <a href="products.html"> products </a>
+          <a href="users_area/user_profile.html"><i class="fa-solid fa-user"></i>Accounts</a>
+          <a href="users_area/user_login.html" class="fas fa-heart"></a>
+          <a href="cart.html" class="fas fa-shopping-cart"></a>
+        </div>
+      </div>
+    </header>
+    <!-- header section ends -->
+    <!-- header section ends -->
+    <div class="ragistration_container">
+      <!-- Ragistration form -->
+      <form action="#" method="post" enctype="multipart/form-data">
+        <h1>User Ragistration</h1>
+        <div class="user-details">
+          <div class="">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="border"
+                name="customer_name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input
+                type="text"
+                placeholder="Enter your username"
+                class="border"
+                name="user_username"
+                required
+              />
+            </div>
+          </div>
+          <div class="">
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="border"
+                name="user_email"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input
+                type="text"
+                placeholder="Enter your number"
+                class="border"
+                name="user_contact"
+                required
+              />
+            </div>
+          </div>
+          <div class="">
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input
+                type="text"
+                placeholder="Enter your password"
+                class="border"
+                name="user_password"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password</span>
+              <input
+                type="text"
+                placeholder="Confirm your password"
+                class="border"
+                name="conf_user_password"
+                required
+              />
+            </div>
+          </div>
+          <div class="">
+            <div class="input-box remove-border">
+              <span class="details">user image</span>
+              <input
+                type="file"
+                name="user_image"
+                id=""
+                name="user_image"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Address:</span>
+              <input
+                type="text"
+                name="user_address"
+                id=""
+                class="border"
+                placeholder="Enter your address.."
+                required
+              />
+            </div>
+          </div>
+          <div class="radio_section">
+            <label for="">Account Type</label>
+            <div class="radio_opti">
+              <div class="">
+                <input type="radio" name="acc" id="only_buyer" class="radio" /><label
+                  for="only_buyer"
+                >
+                  Only Buyer</label
+                >
+              </div>
+              <div class="radio_opti">
+                <input type="radio" name="acc" id="buyer_and_seller" class="radio"/><label
+                  for="buyer_and_seller"
+                >
+                  buyer and seller</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Register" name="user_register" />
+            <p class="login_link">
+              already have an accound?
+            </p>
+            <input type="submit" value="Login" name="login_page" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- footer section starts  -->
+
+    <section class="quick-links">
+      <a href="home.html" class="logo"> <i class="fas fa-store"></i> shopie </a>
+
+      <div class="links">
+        <a href="#home"> home </a>
+        <a href="about.html"> about </a>
+        <a href="products.html"> products </a>
+        <a href="contact.html"> contact </a>
+        <a href="login.html"> login </a>
+        <a href="register.html"> register </a>
+        <a href="cart.html"> cart </a>
+      </div>
+
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </section>
+
+    <section class="copyright">
+      <p>
+        All rights reserved by
+        <span><i class="fa-solid fa-heart"></i></span> Sameer khan
+      </p>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- swiper js link      -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

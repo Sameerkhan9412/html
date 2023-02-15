@@ -1,0 +1,83 @@
+.user_profile{
+    width:100%;
+    /* border:2px solid red; */
+    height:90vh;
+    display: flex;
+}
+.left_child{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: rgb(113, 207, 203);
+    color:black;
+    /* border:2px solid red; */
+}
+.left_child h1{
+    text-align: center;
+}
+.users_bio{
+    /* background-color: #333; */
+    width: 100%;
+    /* margin: 1rem; */
+}
+.user_image{
+    position: relative;
+    width:15rem;
+    height:15rem;
+    border:1rem solid white;
+    border-radius:50%;
+    overflow: hidden;
+    margin: auto;
+    /* text-align: center; */
+    /* opacity: 0; */
+}
+.user_image img{
+    position: absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    /* z-index: -1; */
+    /* text-align: center; */
+}
+.users_bio h1{
+    text-align: center;
+}
+.profile_element_list{
+    background-color: white;
+    border-radius: 1rem;
+}
+.profile_element_list a{
+    display: block;
+    color: #333;
+    text-align: center;
+    padding:1rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+.profile_element_list a:hover{
+    color: #0984e3;
+transform: translateY(-10%);
+}
+.profile_element_list a i{
+    color: yellow;
+}
+.right_child{
+    width:70%;
+    /* border:3px solid yellow; */
+    display: flex;
+    flex-direction: column;
+}
+.right_child h1{ 
+    text-align: center;
+}
+.right_child a{
+    font-size: 2rem;
+    text-align: center;
+}
+.pending_orders{
+    font-size: 3rem;
+    align-items: center;
+    text-align: center;
+    padding:1rem;
+}

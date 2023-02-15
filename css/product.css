@@ -1,0 +1,34 @@
+.box{
+  position: relative;
+  overflow: hidden;
+}
+.images_cover{
+  width:100%;
+  /* border:2px solid red; */
+}
+.icons{
+  font-size: 2rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top:1rem;
+  left: 1rem;
+bottom: 2rem;
+transform: translateX(-200%);
+}
+.box:hover .icons{
+  transform: translateX(0%);
+  
+}
+.icons a{
+  color:white;
+  margin:0.5rem;
+  background-color: black;
+  padding:1rem;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+.icons a:hover{
+background-color: #0984e3;
+}

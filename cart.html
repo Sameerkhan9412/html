@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7b5f9d112b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiper css link  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <title>Product</title>
+  </head>
+  <body>
+    <!-- header sectio start -->
+    <header class="header">
+      <div class="logo">
+        <a href="home.html"
+          ><i class="fa-sharp fa-solid fa-shop"></i>online shop</a
+        >
+      </div>
+      <div class="mobile_responsive_element">
+        <span
+          ><i
+            class="fa-solid fa-magnifying-glass"
+            id="search_btn"
+            onclick="search_componenet()"
+          ></i
+        ></span>
+        <span><i class="fa-solid fa-cart-shopping" id="cart_btn"></i></span>
+        <span
+          ><i class="fa-solid fa-bars" id="menu_btn" onclick="show()"></i
+        ></span>
+        <span
+          ><i class="fa-solid fa-xmark" id="close_btn" onclick="hide()"></i
+        ></span>
+      </div>
+      <div class="nav_right_side_element">
+        <form action="#" method="post" class="search-form" id="try">
+          <input type="search" id="search-box" placeholder="search here..." />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="nav_list">
+          <a href="home.html" id=""> home </a>
+          <a href="about.html"> about </a>
+          <a href="products.html"> products </a>
+          <a href="users_area/user_profile.html"
+            ><i class="fa-solid fa-user"></i>Accounts</a
+          >
+          <a href="users_area/user_login.html" class="fas fa-heart"></a>
+          <a href="cart.html" class="fas fa-shopping-cart"></a>
+        </div>
+      </div>
+    </header>
+    <!-- header section ends -->
+<!-- cart section start -->
+
+<section class="shopping-cart">
+
+    <h1 class="heading">your <span>products</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="images/product-1.jpg" alt="">
+            <div class="content">
+                <h3>smartphone</h3>
+                <form action="">
+                    <span>quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                </form>
+                <div class="price">Rs249.99 <span>Rs399.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="images/product-2.jpg" alt="">
+            <div class="content">
+                <h3>camera</h3>
+                <form action="">
+                    <span>quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                </form>
+                <div class="price">Rs249.99 <span>Rs399.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="images/product-3.jpg" alt="">
+            <div class="content">
+                <h3>television</h3>
+                <form action="">
+                    <span>quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                </form>
+                <div class="price">Rs249.99 <span>Rs399.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="images/product-4.jpg" alt="">
+            <div class="content">
+                <h3>speaker</h3>
+                <form action="">
+                    <span>quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                </form>
+                <div class="price">Rs249.99 <span>Rs399.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="images/product-6.jpg" alt="">
+            <div class="content">
+                <h3>smartwatch</h3>
+                <form action="">
+                    <span>quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                </form>
+                <div class="price">Rs249.99 <span>Rs399.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="images/product-7.jpg" alt="">
+            <div class="content">
+                <h3>headphone</h3>
+                <form action="">
+                    <span>quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                </form>
+                <div class="price">Rs249.99 <span>Rs399.99</span></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cart-total">
+        <h3> subtotal : <span>Rs1499.94</span> </h3>
+        <h3> discount : <span>-Rs99.94</span> </h3>
+        <h3> subtotal : <span>Rs1400.00</span> </h3>
+        <a href="#" class="btn">proceed to checkout</a>
+    </div>
+
+</section>
+
+<!-- footer section starts  -->
+
+    <section class="quick-links">
+      <a href="home.html" class="logo"> <i class="fas fa-store"></i> shopie </a>
+
+      <div class="links">
+        <a href="#home"> home </a>
+        <a href="about.html"> about </a>
+        <a href="products.html"> products </a>
+        <a href="contact.html"> contact </a>
+        <a href="login.html"> login </a>
+        <a href="register.html"> register </a>
+        <a href="cart.html"> cart </a>
+      </div>
+
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </section>
+
+    <section class="copyright">
+      <p>
+        All rights reserved by
+        <span><i class="fa-solid fa-heart"></i></span> Sameer khan
+      </p>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- swiper js link      -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
+<script>
+  let a = document.querySelector("#menu_btn");
+  let b = document.querySelector("#close_btn");
+  let c = document.querySelector(".nav_list");
+  let d = document.querySelector(".search-form");
+  function show() {
+    a.style.display = "none";
+    b.style.display = "inline-block";
+    c.style.display = "flex";
+  }
+  function hide() {
+    b.style.display = "none";
+    a.style.display = "inline-block";
+    c.style.display = "none";
+  }
+  function search_componenet() {
+    d.style.display = "flex";
+  }
+</script>
+
